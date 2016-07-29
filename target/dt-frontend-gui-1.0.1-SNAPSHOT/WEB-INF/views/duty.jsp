@@ -15,19 +15,19 @@
         <meta content="" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
-        <link href="./resources/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="./resources/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="./resources/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="./resources/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <link href="./resources/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="./resources/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="./resources/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="./resources/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN THEME GLOBAL STYLES -->
-        <link href="./resources/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />
-        <link href="./resources/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <link href="./resources/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="./resources/css/plugins.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME GLOBAL STYLES -->
         <!-- BEGIN THEME LAYOUT STYLES -->
-        <link href="./resources/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
-        <link href="./resources/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
-        <link href="./resources/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <link href="./resources/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="./resources/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="./resources/css/custom.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
         <link rel="shortcut icon" href="favicon.ico" /> </head>
     <!-- END HEAD -->
@@ -44,13 +44,10 @@
                                 <!-- BEGIN LOGO -->
                                 <div class="page-logo">
                                     <a href="index.html">
-                                        <img src="./resources/layouts/layout3/img/logo-default.jpg" alt="logo" class="logo-default">
+                                        <img src="./resources/img/logo.png" alt="logo" class="logo-default">
                                     </a>
                                 </div>
                                 <!-- END LOGO -->
-                                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-                                <a href="javascript:;" class="menu-toggler"></a>
-                                <!-- END RESPONSIVE MENU TOGGLER -->
                                 <!-- BEGIN TOP NAVIGATION MENU -->
                                 <div class="top-menu">
                                     <ul class="nav navbar-nav pull-right">
@@ -62,8 +59,7 @@
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li class="external">
-                                                    <h3>You have
-                                                        <strong>12 pending</strong> tasks</h3>
+                                                    <h3>You have <strong>12 pending</strong> tasks</h3>
                                                     <a href="app_todo.html">view all</a>
                                                 </li>
                                                 <li>
@@ -154,198 +150,10 @@
                                             </ul>
                                         </li>
                                         <!-- END NOTIFICATION DROPDOWN -->
-                                        <!-- BEGIN TODO DROPDOWN -->
-                                        <li class="dropdown dropdown-extended dropdown-tasks dropdown-dark" id="header_task_bar">
-                                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                <i class="icon-calendar"></i>
-                                                <span class="badge badge-default">3</span>
-                                            </a>
-                                            <ul class="dropdown-menu extended tasks">
-                                                <li class="external">
-                                                    <h3>You have
-                                                        <strong>12 pending</strong> tasks</h3>
-                                                    <a href="app_todo_2.html">view all</a>
-                                                </li>
-                                                <li>
-                                                    <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
-                                                        <li>
-                                                            <a href="javascript:;">
-                                                                <span class="task">
-                                                                    <span class="desc">New release v1.2 </span>
-                                                                    <span class="percent">30%</span>
-                                                                </span>
-                                                                <span class="progress">
-                                                                    <span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                                                        <span class="sr-only">40% Complete</span>
-                                                                    </span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;">
-                                                                <span class="task">
-                                                                    <span class="desc">Application deployment</span>
-                                                                    <span class="percent">65%</span>
-                                                                </span>
-                                                                <span class="progress">
-                                                                    <span style="width: 65%;" class="progress-bar progress-bar-danger" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                                                                        <span class="sr-only">65% Complete</span>
-                                                                    </span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;">
-                                                                <span class="task">
-                                                                    <span class="desc">Mobile app release</span>
-                                                                    <span class="percent">98%</span>
-                                                                </span>
-                                                                <span class="progress">
-                                                                    <span style="width: 98%;" class="progress-bar progress-bar-success" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
-                                                                        <span class="sr-only">98% Complete</span>
-                                                                    </span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;">
-                                                                <span class="task">
-                                                                    <span class="desc">Database migration</span>
-                                                                    <span class="percent">10%</span>
-                                                                </span>
-                                                                <span class="progress">
-                                                                    <span style="width: 10%;" class="progress-bar progress-bar-warning" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                                                                        <span class="sr-only">10% Complete</span>
-                                                                    </span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;">
-                                                                <span class="task">
-                                                                    <span class="desc">Web server upgrade</span>
-                                                                    <span class="percent">58%</span>
-                                                                </span>
-                                                                <span class="progress">
-                                                                    <span style="width: 58%;" class="progress-bar progress-bar-info" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
-                                                                        <span class="sr-only">58% Complete</span>
-                                                                    </span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;">
-                                                                <span class="task">
-                                                                    <span class="desc">Mobile development</span>
-                                                                    <span class="percent">85%</span>
-                                                                </span>
-                                                                <span class="progress">
-                                                                    <span style="width: 85%;" class="progress-bar progress-bar-success" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                                        <span class="sr-only">85% Complete</span>
-                                                                    </span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;">
-                                                                <span class="task">
-                                                                    <span class="desc">New UI release</span>
-                                                                    <span class="percent">38%</span>
-                                                                </span>
-                                                                <span class="progress progress-striped">
-                                                                    <span style="width: 38%;" class="progress-bar progress-bar-important" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
-                                                                        <span class="sr-only">38% Complete</span>
-                                                                    </span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!-- END TODO DROPDOWN -->
-                                        <li class="droddown dropdown-separator">
-                                            <span class="separator"></span>
-                                        </li>
-                                        <!-- BEGIN INBOX DROPDOWN -->
-                                        <li class="dropdown dropdown-extended dropdown-inbox dropdown-dark" id="header_inbox_bar">
-                                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                <span class="circle">3</span>
-                                                <span class="corner"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="external">
-                                                    <h3>You have
-                                                        <strong>7 New</strong> Messages</h3>
-                                                    <a href="app_inbox.html">view all</a>
-                                                </li>
-                                                <li>
-                                                    <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
-                                                        <li>
-                                                            <a href="#">
-                                                                <span class="photo">
-                                                                    <img src="./resources/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>
-                                                                <span class="subject">
-                                                                    <span class="from"> Lisa Wong </span>
-                                                                    <span class="time">Just Now </span>
-                                                                </span>
-                                                                <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <span class="photo">
-                                                                    <img src="./resources/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>
-                                                                <span class="subject">
-                                                                    <span class="from"> Richard Doe </span>
-                                                                    <span class="time">16 mins </span>
-                                                                </span>
-                                                                <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <span class="photo">
-                                                                    <img src="./resources/layouts/layout3/img/avatar1.jpg" class="img-circle" alt=""> </span>
-                                                                <span class="subject">
-                                                                    <span class="from"> Bob Nilson </span>
-                                                                    <span class="time">2 hrs </span>
-                                                                </span>
-                                                                <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <span class="photo">
-                                                                    <img src="./resources/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>
-                                                                <span class="subject">
-                                                                    <span class="from"> Lisa Wong </span>
-                                                                    <span class="time">40 mins </span>
-                                                                </span>
-                                                                <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <span class="photo">
-                                                                    <img src="./resources/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>
-                                                                <span class="subject">
-                                                                    <span class="from"> Richard Doe </span>
-                                                                    <span class="time">46 mins </span>
-                                                                </span>
-                                                                <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!-- END INBOX DROPDOWN -->
                                         <!-- BEGIN USER LOGIN DROPDOWN -->
                                         <li class="dropdown dropdown-user dropdown-dark">
                                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                <img alt="" class="img-circle" src="./resources/layouts/layout3/img/avatar9.jpg">
-                                                <span class="username username-hide-mobile">Nick</span>
+                                                <img alt="" class="img-circle" src="./resources/img/avatar9.jpg">
                                             </a>
                                             <ul class="dropdown-menu dropdown-menu-default">
                                                 <li>
@@ -380,736 +188,12 @@
                                             </ul>
                                         </li>
                                         <!-- END USER LOGIN DROPDOWN -->
-                                        <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-                                        <li class="dropdown dropdown-extended quick-sidebar-toggler">
-                                            <span class="sr-only">Toggle Quick Sidebar</span>
-                                            <i class="icon-logout"></i>
-                                        </li>
-                                        <!-- END QUICK SIDEBAR TOGGLER -->
                                     </ul>
                                 </div>
                                 <!-- END TOP NAVIGATION MENU -->
                             </div>
                         </div>
                         <!-- END HEADER TOP -->
-                        <!-- BEGIN HEADER MENU -->
-                        <div class="page-header-menu">
-                            <div class="container">
-                                <!-- BEGIN HEADER SEARCH BOX -->
-                                <form class="search-form" action="page_general_search.html" method="GET">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search" name="query">
-                                        <span class="input-group-btn">
-                                            <a href="javascript:;" class="btn submit">
-                                                <i class="icon-magnifier"></i>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </form>
-                                <!-- END HEADER SEARCH BOX -->
-                                <!-- BEGIN MEGA MENU -->
-                                <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
-                                <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
-                                <div class="hor-menu  ">
-                                    <ul class="nav navbar-nav">
-                                        <li class="menu-dropdown classic-menu-dropdown ">
-                                            <a href="javascript:;"> Dashboard
-                                                <span class="arrow"></span>
-                                            </a>
-                                            <ul class="dropdown-menu pull-left">
-                                                <li class=" ">
-                                                    <a href="index.html" class="nav-link  ">
-                                                        <i class="icon-bar-chart"></i> Default Dashboard
-                                                        <span class="badge badge-success">1</span>
-                                                    </a>
-                                                </li>
-                                                <li class=" ">
-                                                    <a href="dashboard_2.html" class="nav-link  ">
-                                                        <i class="icon-bulb"></i> Dashboard 2 </a>
-                                                </li>
-                                                <li class=" ">
-                                                    <a href="dashboard_3.html" class="nav-link  ">
-                                                        <i class="icon-graph"></i> Dashboard 3
-                                                        <span class="badge badge-danger">3</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-dropdown mega-menu-dropdown  ">
-                                            <a href="javascript:;"> UI Features
-                                                <span class="arrow"></span>
-                                            </a>
-                                            <ul class="dropdown-menu" style="min-width: 710px">
-                                                <li>
-                                                    <div class="mega-menu-content">
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <ul class="mega-menu-submenu">
-                                                                    <li>
-                                                                        <a href="ui_colors.html"> Color Library </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_general.html"> General Components </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_buttons.html"> Buttons </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_buttons_spinner.html"> Spinner Buttons </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_confirmations.html"> Popover Confirmations </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_icons.html"> Font Icons </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_socicons.html"> Social Icons </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_typography.html"> Typography </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_tabs_accordions_navs.html"> Tabs, Accordions & Navs </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_tree.html"> Tree View </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="maps_google.html"> Google Maps </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <ul class="mega-menu-submenu">
-                                                                    <li>
-                                                                        <a href="maps_vector.html"> Vector Maps </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_timeline.html"> Timeline 1 </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_timeline_2.html"> Timeline 2 </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_timeline_horizontal.html"> Horizontal Timeline </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_page_progress_style_1.html"> Page Progress Bar - Flash </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_page_progress_style_2.html"> Page Progress Bar - Big Counter </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_blockui.html"> Block UI </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_bootstrap_growl.html"> Bootstrap Growl Notifications </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_notific8.html"> Notific8 Notifications </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_toastr.html"> Toastr Notifications </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_bootbox.html"> Bootbox Dialogs </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <ul class="mega-menu-submenu">
-                                                                    <li>
-                                                                        <a href="ui_alerts_api.html"> Metronic Alerts API </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_session_timeout.html"> Session Timeout </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_idle_timeout.html"> User Idle Timeout </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_modals.html"> Modals </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_extended_modals.html"> Extended Modals </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_tiles.html"> Tiles </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_datepaginator.html"> Date Paginator </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="ui_nestable.html"> Nestable List </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-dropdown classic-menu-dropdown ">
-                                            <a href="javascript:;"> Layouts
-                                                <span class="arrow"></span>
-                                            </a>
-                                            <ul class="dropdown-menu pull-left">
-                                                <li class=" ">
-                                                    <a href="layout_mega_menu_light.html" class="nav-link  "> Light Mega Menu </a>
-                                                </li>
-                                                <li class=" ">
-                                                    <a href="layout_top_bar_light.html" class="nav-link  "> Light Top Bar Dropdowns </a>
-                                                </li>
-                                                <li class=" ">
-                                                    <a href="layout_fluid_page.html" class="nav-link  "> Fluid Page </a>
-                                                </li>
-                                                <li class=" ">
-                                                    <a href="layout_top_bar_fixed.html" class="nav-link  "> Fixed Top Bar </a>
-                                                </li>
-                                                <li class=" ">
-                                                    <a href="layout_mega_menu_fixed.html" class="nav-link  "> Fixed Mega Menu </a>
-                                                </li>
-                                                <li class=" ">
-                                                    <a href="layout_disabled_menu.html" class="nav-link  "> Disabled Menu Links </a>
-                                                </li>
-                                                <li class=" ">
-                                                    <a href="layout_blank_page.html" class="nav-link  "> Blank Page </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-dropdown mega-menu-dropdown  mega-menu-full">
-                                            <a href="javascript:;"> Components
-                                                <span class="arrow"></span>
-                                            </a>
-                                            <ul class="dropdown-menu" style="min-width: ">
-                                                <li>
-                                                    <div class="mega-menu-content">
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <ul class="mega-menu-submenu">
-                                                                    <li>
-                                                                        <h3>Components 1</h3>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_date_time_pickers.html"> Date & Time Pickers </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_color_pickers.html"> Color Pickers </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_select2.html"> Select2 Dropdowns </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_bootstrap_select.html"> Bootstrap Select </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_multi_select.html"> Multi Select </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <ul class="mega-menu-submenu">
-                                                                    <li>
-                                                                        <h3>Components 2</h3>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_bootstrap_select_splitter.html"> Select Splitter </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_typeahead.html"> Typeahead Autocomplete </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_bootstrap_tagsinput.html"> Bootstrap Tagsinput </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_bootstrap_switch.html"> Bootstrap Switch </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_bootstrap_maxlength.html"> Bootstrap Maxlength </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <ul class="mega-menu-submenu">
-                                                                    <li>
-                                                                        <h3>Components 3</h3>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_bootstrap_fileinput.html"> Bootstrap File Input </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_bootstrap_touchspin.html"> Bootstrap Touchspin </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_form_tools.html"> Form Widgets & Tools </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_context_menu.html"> Context Menu </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_editors.html"> Markdown & WYSIWYG Editors </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <ul class="mega-menu-submenu">
-                                                                    <li>
-                                                                        <h3>Components 4</h3>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_code_editors.html"> Code Editors </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_ion_sliders.html"> Ion Range Sliders </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_noui_sliders.html"> NoUI Range Sliders </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="components_knob_dials.html"> Knob Circle Dials </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-dropdown classic-menu-dropdown active">
-                                            <a href="javascript:;"> More
-                                                <span class="arrow"></span>
-                                            </a>
-                                            <ul class="dropdown-menu pull-left">
-                                                <li class="dropdown-submenu ">
-                                                    <a href="javascript:;" class="nav-link nav-toggle ">
-                                                        <i class="icon-settings"></i> Form Stuff
-                                                        <span class="arrow"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class=" ">
-                                                            <a href="form_controls.html" class="nav-link "> Bootstrap Form
-                                                                <br>Controls </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_controls_md.html" class="nav-link "> Material Design
-                                                                <br>Form Controls </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_validation.html" class="nav-link "> Form Validation </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_validation_states_md.html" class="nav-link "> Material Design
-                                                                <br>Form Validation States </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_validation_md.html" class="nav-link "> Material Design
-                                                                <br>Form Validation </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_layouts.html" class="nav-link "> Form Layouts </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_input_mask.html" class="nav-link "> Form Input Mask </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_editable.html" class="nav-link "> Form X-editable </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_wizard.html" class="nav-link "> Form Wizard </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_icheck.html" class="nav-link "> iCheck Controls </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_image_crop.html" class="nav-link "> Image Cropping </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_fileupload.html" class="nav-link "> Multiple File Upload </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="form_dropzone.html" class="nav-link "> Dropzone File Upload </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu ">
-                                                    <a href="javascript:;" class="nav-link nav-toggle ">
-                                                        <i class="icon-briefcase"></i> Tables
-                                                        <span class="arrow"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class=" ">
-                                                            <a href="table_static_basic.html" class="nav-link "> Basic Tables </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="table_static_responsive.html" class="nav-link "> Responsive Tables </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="table_bootstrap.html" class="nav-link "> Bootstrap Tables </a>
-                                                        </li>
-                                                        <li class="dropdown-submenu ">
-                                                            <a href="javascript:;" class="nav-link nav-toggle"> Datatables
-                                                                <span class="arrow"></span>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li class="">
-                                                                    <a href="table_datatables_managed.html" class="nav-link "> Managed Datatables </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="table_datatables_buttons.html" class="nav-link "> Buttons Extension </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="table_datatables_colreorder.html" class="nav-link "> Colreorder Extension </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="table_datatables_rowreorder.html" class="nav-link "> Rowreorder Extension </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="table_datatables_scroller.html" class="nav-link "> Scroller Extension </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="table_datatables_fixedheader.html" class="nav-link "> FixedHeader Extension </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="table_datatables_responsive.html" class="nav-link "> Responsive Extension </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="table_datatables_editable.html" class="nav-link "> Editable Datatables </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="table_datatables_ajax.html" class="nav-link "> Ajax Datatables </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu ">
-                                                    <a href="?p=" class="nav-link nav-toggle ">
-                                                        <i class="icon-wallet"></i> Portlets
-                                                        <span class="arrow"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class=" ">
-                                                            <a href="portlet_boxed.html" class="nav-link "> Boxed Portlets </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="portlet_light.html" class="nav-link "> Light Portlets </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="portlet_solid.html" class="nav-link "> Solid Portlets </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="portlet_ajax.html" class="nav-link "> Ajax Portlets </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="portlet_draggable.html" class="nav-link "> Draggable Portlets </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu active">
-                                                    <a href="?p=" class="nav-link nav-toggle active">
-                                                        <i class="icon-settings"></i> Elements
-                                                        <span class="arrow open"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class=" ">
-                                                            <a href="elements_steps.html" class="nav-link "> Steps </a>
-                                                        </li>
-                                                        <li class=" active">
-                                                            <a href="elements_lists.html" class="nav-link "> Lists </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="elements_ribbons.html" class="nav-link "> Ribbons </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="elements_overlay.html" class="nav-link "> Overlays </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="elements_cards.html" class="nav-link "> User Cards </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu ">
-                                                    <a href="javascript:;" class="nav-link nav-toggle ">
-                                                        <i class="icon-bar-chart"></i> Charts
-                                                        <span class="arrow"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class=" ">
-                                                            <a href="charts_amcharts.html" class="nav-link "> amChart </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="charts_flotcharts.html" class="nav-link "> Flot Charts </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="charts_flowchart.html" class="nav-link "> Flow Charts </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="charts_google.html" class="nav-link "> Google Charts </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="charts_echarts.html" class="nav-link "> eCharts </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="charts_morris.html" class="nav-link "> Morris Charts </a>
-                                                        </li>
-                                                        <li class="dropdown-submenu ">
-                                                            <a href="javascript:;" class="nav-link nav-toggle"> HighCharts
-                                                                <span class="arrow"></span>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li class="">
-                                                                    <a href="charts_highcharts.html" class="nav-link " target="_blank"> HighCharts </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="charts_highstock.html" class="nav-link " target="_blank"> HighStock </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="charts_highmaps.html" class="nav-link " target="_blank"> HighMaps </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-dropdown classic-menu-dropdown ">
-                                            <a href="javascript:;">
-                                                <i class="icon-briefcase"></i> Pages
-                                                <span class="arrow"></span>
-                                            </a>
-                                            <ul class="dropdown-menu pull-left">
-                                                <li class="dropdown-submenu ">
-                                                    <a href="javascript:;" class="nav-link nav-toggle ">
-                                                        <i class="icon-basket"></i> eCommerce
-                                                        <span class="arrow"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class=" ">
-                                                            <a href="ecommerce_index.html" class="nav-link ">
-                                                                <i class="icon-home"></i> Dashboard </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="ecommerce_orders.html" class="nav-link ">
-                                                                <i class="icon-basket"></i> Orders </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="ecommerce_orders_view.html" class="nav-link ">
-                                                                <i class="icon-tag"></i> Order View </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="ecommerce_products.html" class="nav-link ">
-                                                                <i class="icon-graph"></i> Products </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="ecommerce_products_edit.html" class="nav-link ">
-                                                                <i class="icon-graph"></i> Product Edit </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu ">
-                                                    <a href="javascript:;" class="nav-link nav-toggle ">
-                                                        <i class="icon-docs"></i> Apps
-                                                        <span class="arrow"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class=" ">
-                                                            <a href="app_todo.html" class="nav-link ">
-                                                                <i class="icon-clock"></i> Todo 1 </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="app_todo_2.html" class="nav-link ">
-                                                                <i class="icon-check"></i> Todo 2 </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="app_inbox.html" class="nav-link ">
-                                                                <i class="icon-envelope"></i> Inbox </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="app_calendar.html" class="nav-link ">
-                                                                <i class="icon-calendar"></i> Calendar </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="app_ticket.html" class="nav-link ">
-                                                                <i class="icon-notebook"></i> Support </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu ">
-                                                    <a href="javascript:;" class="nav-link nav-toggle ">
-                                                        <i class="icon-user"></i> User
-                                                        <span class="arrow"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class=" ">
-                                                            <a href="page_user_profile_1.html" class="nav-link ">
-                                                                <i class="icon-user"></i> Profile 1 </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_user_profile_1_account.html" class="nav-link ">
-                                                                <i class="icon-user-female"></i> Profile 1 Account </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_user_profile_1_help.html" class="nav-link ">
-                                                                <i class="icon-user-following"></i> Profile 1 Help </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_user_profile_2.html" class="nav-link ">
-                                                                <i class="icon-users"></i> Profile 2 </a>
-                                                        </li>
-                                                        <li class="dropdown-submenu ">
-                                                            <a href="javascript:;" class="nav-link nav-toggle">
-                                                                <i class="icon-notebook"></i> Login
-                                                                <span class="arrow"></span>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li class="">
-                                                                    <a href="page_user_login_1.html" class="nav-link " target="_blank"> Login Page 1 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_user_login_2.html" class="nav-link " target="_blank"> Login Page 2 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_user_login_3.html" class="nav-link " target="_blank"> Login Page 3 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_user_login_4.html" class="nav-link " target="_blank"> Login Page 4 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_user_login_5.html" class="nav-link " target="_blank"> Login Page 5 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_user_login_6.html" class="nav-link " target="_blank"> Login Page 6 </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_user_lock_1.html" class="nav-link " target="_blank">
-                                                                <i class="icon-lock"></i> Lock Screen 1 </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_user_lock_2.html" class="nav-link " target="_blank">
-                                                                <i class="icon-lock-open"></i> Lock Screen 2 </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu ">
-                                                    <a href="javascript:;" class="nav-link nav-toggle ">
-                                                        <i class="icon-social-dribbble"></i> General
-                                                        <span class="arrow"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class=" ">
-                                                            <a href="page_general_about.html" class="nav-link ">
-                                                                <i class="icon-info"></i> About </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_general_contact.html" class="nav-link ">
-                                                                <i class="icon-call-end"></i> Contact </a>
-                                                        </li>
-                                                        <li class="dropdown-submenu ">
-                                                            <a href="javascript:;" class="nav-link nav-toggle">
-                                                                <i class="icon-notebook"></i> Portfolio
-                                                                <span class="arrow"></span>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li class="">
-                                                                    <a href="page_general_portfolio_1.html" class="nav-link "> Portfolio 1 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_general_portfolio_2.html" class="nav-link "> Portfolio 2 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_general_portfolio_3.html" class="nav-link "> Portfolio 3 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_general_portfolio_4.html" class="nav-link "> Portfolio 4 </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="dropdown-submenu ">
-                                                            <a href="javascript:;" class="nav-link nav-toggle">
-                                                                <i class="icon-magnifier"></i> Search
-                                                                <span class="arrow"></span>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li class="">
-                                                                    <a href="page_general_search.html" class="nav-link "> Search 1 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_general_search_2.html" class="nav-link "> Search 2 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_general_search_3.html" class="nav-link "> Search 3 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_general_search_4.html" class="nav-link "> Search 4 </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="page_general_search_5.html" class="nav-link "> Search 5 </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_general_pricing.html" class="nav-link ">
-                                                                <i class="icon-tag"></i> Pricing </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_general_faq.html" class="nav-link ">
-                                                                <i class="icon-wrench"></i> FAQ </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_general_blog.html" class="nav-link ">
-                                                                <i class="icon-pencil"></i> Blog </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_general_blog_post.html" class="nav-link ">
-                                                                <i class="icon-note"></i> Blog Post </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_general_invoice.html" class="nav-link ">
-                                                                <i class="icon-envelope"></i> Invoice </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_general_invoice_2.html" class="nav-link ">
-                                                                <i class="icon-envelope"></i> Invoice 2 </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu ">
-                                                    <a href="javascript:;" class="nav-link nav-toggle ">
-                                                        <i class="icon-settings"></i> System
-                                                        <span class="arrow"></span>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li class=" ">
-                                                            <a href="page_system_coming_soon.html" class="nav-link " target="_blank"> Coming Soon </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_system_404_1.html" class="nav-link "> 404 Page 1 </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_system_404_2.html" class="nav-link " target="_blank"> 404 Page 2 </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_system_404_3.html" class="nav-link " target="_blank"> 404 Page 3 </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_system_500_1.html" class="nav-link "> 500 Page 1 </a>
-                                                        </li>
-                                                        <li class=" ">
-                                                            <a href="page_system_500_2.html" class="nav-link " target="_blank"> 500 Page 2 </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- END MEGA MENU -->
-                            </div>
-                        </div>
-                        <!-- END HEADER MENU -->
                     </div>
                     <!-- END HEADER -->
                 </div>
@@ -1131,140 +215,12 @@
                                         </h1>
                                     </div>
                                     <!-- END PAGE TITLE -->
-                                    <!-- BEGIN PAGE TOOLBAR -->
-                                    <div class="page-toolbar">
-                                        <!-- BEGIN THEME PANEL -->
-                                        <div class="btn-group btn-theme-panel">
-                                            <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown">
-                                                <i class="icon-settings"></i>
-                                            </a>
-                                            <div class="dropdown-menu theme-panel pull-right dropdown-custom hold-on-click">
-                                                <div class="row">
-                                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                                        <h3>THEME COLORS</h3>
-                                                        <div class="row">
-                                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                                <ul class="theme-colors">
-                                                                    <li class="theme-color theme-color-default" data-theme="default">
-                                                                        <span class="theme-color-view"></span>
-                                                                        <span class="theme-color-name">Default</span>
-                                                                    </li>
-                                                                    <li class="theme-color theme-color-blue-hoki" data-theme="blue-hoki">
-                                                                        <span class="theme-color-view"></span>
-                                                                        <span class="theme-color-name">Blue Hoki</span>
-                                                                    </li>
-                                                                    <li class="theme-color theme-color-blue-steel" data-theme="blue-steel">
-                                                                        <span class="theme-color-view"></span>
-                                                                        <span class="theme-color-name">Blue Steel</span>
-                                                                    </li>
-                                                                    <li class="theme-color theme-color-yellow-orange" data-theme="yellow-orange">
-                                                                        <span class="theme-color-view"></span>
-                                                                        <span class="theme-color-name">Orange</span>
-                                                                    </li>
-                                                                    <li class="theme-color theme-color-yellow-crusta" data-theme="yellow-crusta">
-                                                                        <span class="theme-color-view"></span>
-                                                                        <span class="theme-color-name">Yellow Crusta</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                                <ul class="theme-colors">
-                                                                    <li class="theme-color theme-color-green-haze" data-theme="green-haze">
-                                                                        <span class="theme-color-view"></span>
-                                                                        <span class="theme-color-name">Green Haze</span>
-                                                                    </li>
-                                                                    <li class="theme-color theme-color-red-sunglo" data-theme="red-sunglo">
-                                                                        <span class="theme-color-view"></span>
-                                                                        <span class="theme-color-name">Red Sunglo</span>
-                                                                    </li>
-                                                                    <li class="theme-color theme-color-red-intense" data-theme="red-intense">
-                                                                        <span class="theme-color-view"></span>
-                                                                        <span class="theme-color-name">Red Intense</span>
-                                                                    </li>
-                                                                    <li class="theme-color theme-color-purple-plum" data-theme="purple-plum">
-                                                                        <span class="theme-color-view"></span>
-                                                                        <span class="theme-color-name">Purple Plum</span>
-                                                                    </li>
-                                                                    <li class="theme-color theme-color-purple-studio" data-theme="purple-studio">
-                                                                        <span class="theme-color-view"></span>
-                                                                        <span class="theme-color-name">Purple Studio</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 col-sm-6 col-xs-12 seperator">
-                                                        <h3>LAYOUT</h3>
-                                                        <ul class="theme-settings">
-                                                            <li> Theme Style
-                                                                <select class="theme-setting theme-setting-style form-control input-sm input-small input-inline tooltips" data-original-title="Change theme style" data-container="body" data-placement="left">
-                                                                    <option value="boxed" selected="selected">Square corners</option>
-                                                                    <option value="rounded">Rounded corners</option>
-                                                                </select>
-                                                            </li>
-                                                            <li> Layout
-                                                                <select class="theme-setting theme-setting-layout form-control input-sm input-small input-inline tooltips" data-original-title="Change layout type" data-container="body" data-placement="left">
-                                                                    <option value="boxed" selected="selected">Boxed</option>
-                                                                    <option value="fluid">Fluid</option>
-                                                                </select>
-                                                            </li>
-                                                            <li> Top Menu Style
-                                                                <select class="theme-setting theme-setting-top-menu-style form-control input-sm input-small input-inline tooltips" data-original-title="Change top menu dropdowns style" data-container="body"
-                                                                    data-placement="left">
-                                                                    <option value="dark" selected="selected">Dark</option>
-                                                                    <option value="light">Light</option>
-                                                                </select>
-                                                            </li>
-                                                            <li> Top Menu Mode
-                                                                <select class="theme-setting theme-setting-top-menu-mode form-control input-sm input-small input-inline tooltips" data-original-title="Enable fixed(sticky) top menu" data-container="body"
-                                                                    data-placement="left">
-                                                                    <option value="fixed">Fixed</option>
-                                                                    <option value="not-fixed" selected="selected">Not Fixed</option>
-                                                                </select>
-                                                            </li>
-                                                            <li> Mega Menu Style
-                                                                <select class="theme-setting theme-setting-mega-menu-style form-control input-sm input-small input-inline tooltips" data-original-title="Change mega menu dropdowns style" data-container="body"
-                                                                    data-placement="left">
-                                                                    <option value="dark" selected="selected">Dark</option>
-                                                                    <option value="light">Light</option>
-                                                                </select>
-                                                            </li>
-                                                            <li> Mega Menu Mode
-                                                                <select class="theme-setting theme-setting-mega-menu-mode form-control input-sm input-small input-inline tooltips" data-original-title="Enable fixed(sticky) mega menu" data-container="body"
-                                                                    data-placement="left">
-                                                                    <option value="fixed" selected="selected">Fixed</option>
-                                                                    <option value="not-fixed">Not Fixed</option>
-                                                                </select>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END THEME PANEL -->
-                                    </div>
-                                    <!-- END PAGE TOOLBAR -->
                                 </div>
                             </div>
                             <!-- END PAGE HEAD-->
                             <!-- BEGIN PAGE CONTENT BODY -->
                             <div class="page-content">
                                 <div class="container">
-                                    <!-- BEGIN PAGE BREADCRUMBS -->
-                                    <ul class="page-breadcrumb breadcrumb">
-                                        <li>
-                                            <a href="index.html">Home</a>
-                                            <i class="fa fa-circle"></i>
-                                        </li>
-                                        <li>
-                                            <a href="#">More</a>
-                                            <i class="fa fa-circle"></i>
-                                        </li>
-                                        <li>
-                                            <span>Elements</span>
-                                        </li>
-                                    </ul>
-                                    <!-- END PAGE BREADCRUMBS -->
                                     <!-- BEGIN PAGE CONTENT INNER -->
                                     <div class="page-content-inner">
                                         <!-- BEGIN : LISTS -->
@@ -1354,14 +310,14 @@
                                                     <div class="media-status">
                                                         <span class="badge badge-success">8</span>
                                                     </div>
-                                                    <img class="media-object" src="./resources/layouts/layout/img/avatar3.jpg" alt="...">
+                                                    <img class="media-object" src="./resources/img/avatar3.jpg" alt="...">
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Bob Nilson</h4>
                                                         <div class="media-heading-sub"> Project Manager </div>
                                                     </div>
                                                 </li>
                                                 <li class="media">
-                                                    <img class="media-object" src="./resources/layouts/layout/img/avatar1.jpg" alt="...">
+                                                    <img class="media-object" src="./resources/img/avatar1.jpg" alt="...">
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Nick Larson</h4>
                                                         <div class="media-heading-sub"> Art Director </div>
@@ -1371,14 +327,14 @@
                                                     <div class="media-status">
                                                         <span class="badge badge-danger">3</span>
                                                     </div>
-                                                    <img class="media-object" src="./resources/layouts/layout/img/avatar4.jpg" alt="...">
+                                                    <img class="media-object" src="./resources/img/avatar4.jpg" alt="...">
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Deon Hubert</h4>
                                                         <div class="media-heading-sub"> CTO </div>
                                                     </div>
                                                 </li>
                                                 <li class="media">
-                                                    <img class="media-object" src="./resources/layouts/layout/img/avatar2.jpg" alt="...">
+                                                    <img class="media-object" src="./resources/img/avatar2.jpg" alt="...">
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Ella Wong</h4>
                                                         <div class="media-heading-sub"> CEO </div>
@@ -1391,7 +347,7 @@
                                                     <div class="media-status">
                                                         <span class="badge badge-warning">2</span>
                                                     </div>
-                                                    <img class="media-object" src="./resources/layouts/layout/img/avatar6.jpg" alt="...">
+                                                    <img class="media-object" src="./resources/img/avatar6.jpg" alt="...">
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Lara Kunis</h4>
                                                         <div class="media-heading-sub"> CEO, Loop Inc </div>
@@ -1402,7 +358,7 @@
                                                     <div class="media-status">
                                                         <span class="label label-sm label-success">new</span>
                                                     </div>
-                                                    <img class="media-object" src="./resources/layouts/layout/img/avatar7.jpg" alt="...">
+                                                    <img class="media-object" src="./resources/img/avatar7.jpg" alt="...">
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Ernie Kyllonen</h4>
                                                         <div class="media-heading-sub"> Project Manager,
@@ -1410,7 +366,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="media">
-                                                    <img class="media-object" src="./resources/layouts/layout/img/avatar8.jpg" alt="...">
+                                                    <img class="media-object" src="./resources/img/avatar8.jpg" alt="...">
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Lisa Stone</h4>
                                                         <div class="media-heading-sub"> CTO, Keort Inc </div>
@@ -1421,14 +377,14 @@
                                                     <div class="media-status">
                                                         <span class="badge badge-success">7</span>
                                                     </div>
-                                                    <img class="media-object" src="./resources/layouts/layout/img/avatar9.jpg" alt="...">
+                                                    <img class="media-object" src="./resources/img/avatar9.jpg" alt="...">
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Deon Portalatin</h4>
                                                         <div class="media-heading-sub"> CFO, H&D LTD </div>
                                                     </div>
                                                 </li>
                                                 <li class="media">
-                                                    <img class="media-object" src="./resources/layouts/layout/img/avatar10.jpg" alt="...">
+                                                    <img class="media-object" src="./resources/img/avatar10.jpg" alt="...">
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Irina Savikova</h4>
                                                         <div class="media-heading-sub"> CEO, Tizda Motors Inc </div>
@@ -1438,7 +394,7 @@
                                                     <div class="media-status">
                                                         <span class="badge badge-danger">4</span>
                                                     </div>
-                                                    <img class="media-object" src="./resources/layouts/layout/img/avatar11.jpg" alt="...">
+                                                    <img class="media-object" src="./resources/img/avatar11.jpg" alt="...">
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Maria Gomez</h4>
                                                         <div class="media-heading-sub"> Manager, Infomatic Inc </div>
@@ -1455,7 +411,7 @@
                                                 </div>
                                                 <div class="page-quick-sidebar-chat-user-messages">
                                                     <div class="post out">
-                                                        <img class="avatar" alt="" src="./resources/layouts/layout/img/avatar3.jpg" />
+                                                        <img class="avatar" alt="" src="./resources/img/avatar3.jpg" />
                                                         <div class="message">
                                                             <span class="arrow"></span>
                                                             <a href="javascript:;" class="name">Bob Nilson</a>
@@ -1464,7 +420,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="post in">
-                                                        <img class="avatar" alt="" src="./resources/layouts/layout/img/avatar2.jpg" />
+                                                        <img class="avatar" alt="" src="./resources/img/avatar2.jpg" />
                                                         <div class="message">
                                                             <span class="arrow"></span>
                                                             <a href="javascript:;" class="name">Ella Wong</a>
@@ -1473,7 +429,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="post out">
-                                                        <img class="avatar" alt="" src="./resources/layouts/layout/img/avatar3.jpg" />
+                                                        <img class="avatar" alt="" src="./resources/img/avatar3.jpg" />
                                                         <div class="message">
                                                             <span class="arrow"></span>
                                                             <a href="javascript:;" class="name">Bob Nilson</a>
@@ -1482,7 +438,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="post in">
-                                                        <img class="avatar" alt="" src="./resources/layouts/layout/img/avatar2.jpg" />
+                                                        <img class="avatar" alt="" src="./resources/img/avatar2.jpg" />
                                                         <div class="message">
                                                             <span class="arrow"></span>
                                                             <a href="javascript:;" class="name">Ella Wong</a>
@@ -1491,7 +447,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="post out">
-                                                        <img class="avatar" alt="" src="./resources/layouts/layout/img/avatar3.jpg" />
+                                                        <img class="avatar" alt="" src="./resources/img/avatar3.jpg" />
                                                         <div class="message">
                                                             <span class="arrow"></span>
                                                             <a href="javascript:;" class="name">Bob Nilson</a>
@@ -1500,7 +456,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="post in">
-                                                        <img class="avatar" alt="" src="./resources/layouts/layout/img/avatar2.jpg" />
+                                                        <img class="avatar" alt="" src="./resources/img/avatar2.jpg" />
                                                         <div class="message">
                                                             <span class="arrow"></span>
                                                             <a href="javascript:;" class="name">Ella Wong</a>
@@ -1509,7 +465,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="post out">
-                                                        <img class="avatar" alt="" src="./resources/layouts/layout/img/avatar3.jpg" />
+                                                        <img class="avatar" alt="" src="./resources/img/avatar3.jpg" />
                                                         <div class="message">
                                                             <span class="arrow"></span>
                                                             <a href="javascript:;" class="name">Bob Nilson</a>
@@ -1518,7 +474,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="post in">
-                                                        <img class="avatar" alt="" src="./resources/layouts/layout/img/avatar2.jpg" />
+                                                        <img class="avatar" alt="" src="./resources/img/avatar2.jpg" />
                                                         <div class="message">
                                                             <span class="arrow"></span>
                                                             <a href="javascript:;" class="name">Ella Wong</a>
@@ -1527,7 +483,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="post out">
-                                                        <img class="avatar" alt="" src="./resources/layouts/layout/img/avatar3.jpg" />
+                                                        <img class="avatar" alt="" src="./resources/img/avatar3.jpg" />
                                                         <div class="message">
                                                             <span class="arrow"></span>
                                                             <a href="javascript:;" class="name">Bob Nilson</a>
@@ -1945,28 +901,27 @@
             </div>
         </div>
         <!--[if lt IE 9]>
-<script src="./resources/global/plugins/respond.min.js"></script>
-<script src="./resources/global/plugins/excanvas.min.js"></script>
-<![endif]-->
+        <script src="./resources/plugins/respond.min.js"></script>
+        <script src="./resources/plugins/excanvas.min.js"></script>
+        <![endif]-->
         <!-- BEGIN CORE PLUGINS -->
-        <script src="./resources/global/plugins/jquery.min.js" type="text/javascript"></script>
-        <script src="./resources/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="./resources/global/plugins/js.cookie.min.js" type="text/javascript"></script>
-        <script src="./resources/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-        <script src="./resources/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-        <script src="./resources/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <script src="./resources/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="./resources/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="./resources/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="./resources/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="./resources/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="./resources/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
         <!-- END CORE PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
-        <script src="./resources/global/scripts/app.min.js" type="text/javascript"></script>
+        <script src="./resources/scripts/app.min.js" type="text/javascript"></script>
         <!-- END THEME GLOBAL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
-        <script src="./resources/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
-        <script src="./resources/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script>
-        <script src="./resources/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="./resources/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="./resources/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="./resources/scripts/quick-sidebar.min.js" type="text/javascript"></script>
         <!-- END THEME LAYOUT SCRIPTS -->
         <!-- BEGIN DUTYTRAIL STYLES -->
-        <script type="text/javascript" src="./resources/javascript/functionality/duty.js"></script>
-        <script type="text/javascript" src="./resources/javascript/functionality/dutytrailInterfaceLoader.js"></script>
+        <script type="text/javascript" src="./resources/scripts/duty.js"></script>
         <!-- END DUTYTRAIL STYLES -->
     </body>
 
