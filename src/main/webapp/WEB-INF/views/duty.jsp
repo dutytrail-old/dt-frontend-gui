@@ -41,7 +41,7 @@
                             <div class="container">
                                 <!-- BEGIN LOGO -->
                                 <div class="page-logo">
-                                    <a href="index.html">
+                                    <a href="/duty">
                                         <img src="./resources/img/logo.png" alt="logo" class="logo-default">
                                     </a>
                                 </div>
